@@ -52,7 +52,7 @@ body {
 }
 
 .header {
-
+    display: block;
 }
 
 .header-row {
