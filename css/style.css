@@ -14,6 +14,23 @@
     --color-gray-400: #EBEBEB;
     --color-gray-100: #F2F2F2;
     --color-gray-50: #F8F8F8;
+
+    --color-text: var(--color-dark);
+
+    --spacing: 24px;
+    --radius: 8px;
+
+    --sapce-large: calc(var(--spacing) * 3);
+    --sapce-medium: calc(var(--spacing) * 1.5);
+    --sapce-small: calc(var(--spacing) / 2);
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: var(--color-white);
+    }
 }
 
 @font-face {
@@ -52,7 +69,7 @@ body {
 }
 
 .header {
-
+    display: block;
 }
 
 .header-row {

@@ -6,14 +6,55 @@
 
         <title>Flowelowe</title>
 
-<!--        <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--        <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">-->
-
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
+    <style>
+        :root {
+            --color-text: blue;
+        }
+
+
+        .header-row {
+            display: flex;
+            color: var(--color-text);
+        }
+
+        .header-col {
+            flex: 1 1 auto;
+            color: var(--color-text);
+        }
+
+        .header-logo {
+            margin-right: 20px;
+            color: var(--color-text);
+        }
+
+        .logo {
+            background: red;
+            color: var(--color-text);
+        }
+
+        .contacts {
+            color: var(--color-text);
+        }
+
+        .language {
+            color: #000;
+        }
+    </style>
+
+        <header class="header">
+            <div class="header-row">
+                <div class="logo header-col header-logo"></div>
+                <div class="contacts header-col"></div>
+                <div class="language header-col"></div>
+            </div>
+        </header>
+
+        <div class="logo"></div>
+
         <header class="header">
             <div class="wrapper">
                 <div class="header-row header-row_top">
@@ -49,10 +90,20 @@
 
                     <div class="products">
                         <div class="product">
-                            <img class="product-image" src="./static/images/product.jpg" alt="Orange Rose Espana 70 cm" />
+
+<!--                            <picture>-->
+<!--                                <source srcset="./static/images/product2.jpg" media="(max-width: 480px)">-->
+<!--                                <source srcset="./static/images/product3.jpg" media="(max-width: 720px)">-->
+
+<!--                                <img alt="Elevating Profits recommends TaxDome as cpa practice management software" srcset="./static/images/product@2x.jpg 2x" src="./static/images/product2.jpg">-->
+<!--                            </picture>-->
+
+                            <img class="product-image" srcset="./static/images/productasd2.jpg" alt="Orange Rose Espana 70 cm" />
+
                             <a class="product-title" href="#">Orange Rose Espana 70 cm</a>
                             <span class="product-price">$1024.99</span>
                         </div>
+
 
                         <div class="product">
                             <img class="product-image" src="./static/images/product2.jpg" alt="Orange Rose Espana 70 cm" />
@@ -165,9 +216,9 @@
                     <div class="footer-nav footer-col">Навигация</div>
 
                     <div class="footer-subscribe footer-col">
-                        <h3>Subscribe us!</h3>
+                        <h3 class="headline 3">Subscribe us!</h3>
 
-                        <p>In an effort to worthily lead a person on his last journey, relatives, friends and colleagues present him with flowers.</p>
+                        <p class="footer-description">In an effort to worthily lead a person on his last journey, relatives, friends and colleagues present him with flowers.</p>
                     </div>
                 </div>
             </div>
